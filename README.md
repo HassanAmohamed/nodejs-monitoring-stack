@@ -26,8 +26,7 @@ kubectl port-forward svc/prometheus-service 9090:9090 &  # Prometheus
 kubectl port-forward svc/nodejs-service 8080:8080 &  # Node.js App
 
 📊 Monitoring Architecture
-![Description of image](screen/structure.png)
-
+![Monitoring Architecture](screen/structure.png)
 graph LR
     A[Node.js App] -->|/metrics| B(Prometheus)
     B -->|Scrape| A
